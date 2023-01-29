@@ -1,0 +1,4 @@
+<resources>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyC8oIGaT3yaRrMUc5jcjUN57Sn37ewIVeg</string>
+    <string name="title_activity_maps">MapsActivity</string>
+</resources>
