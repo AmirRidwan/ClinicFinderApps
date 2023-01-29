@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "666889576871",
+    "project_id": "clinicfinderapps",
+    "storage_bucket": "clinicfinderapps.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:666889576871:android:4861c7d05ef94e9d329682",
+        "android_client_info": {
+          "package_name": "com.example.clinicfinderapps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "666889576871-eira87evucc28usotp4eu00agotgufae.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjydF6XdW8O8DXhAOr69_nCtWZhpoCjR0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "666889576871-eira87evucc28usotp4eu00agotgufae.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
