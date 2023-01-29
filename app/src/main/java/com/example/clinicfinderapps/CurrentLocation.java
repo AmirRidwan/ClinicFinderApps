@@ -58,15 +58,12 @@ public class CurrentLocation extends AppCompatActivity {
 
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED){
 
-
             fusedLocationProviderClient.getLastLocation()
                     .addOnSuccessListener(new OnSuccessListener<Location>() {
                         @Override
                         public void onSuccess(Location location) {
 
                             if (location != null){
-
-
 
                                 try {
                                     Geocoder geocoder = new Geocoder(CurrentLocation.this, Locale.getDefault());
@@ -79,14 +76,9 @@ public class CurrentLocation extends AppCompatActivity {
                                 } catch (IOException e) {
                                     e.printStackTrace();
                                 }
-
-
                             }
-
                         }
                     });
-
-
         }else {
 
             askPermission();
