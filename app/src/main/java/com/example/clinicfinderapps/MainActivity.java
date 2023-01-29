@@ -16,7 +16,7 @@ import com.google.firebase.auth.FirebaseUser;
 public class MainActivity extends AppCompatActivity {
 
     DrawerLayout drawerLayout;
-    CardView cardView1, cardView2, cardView3, cardView4;
+    CardView cardView1, cardView2, cardView3, cardView4, cardView5;
     FirebaseAuth auth;
     FirebaseUser user;
     TextView profileText;
@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
         cardView2 = findViewById(R.id.clinic_near_me);
         cardView3 = findViewById(R.id.about_us);
         cardView4 = findViewById(R.id.logout);
+        cardView5 = findViewById(R.id.github);
         profileText.setText("Welcome " + user.getEmail() + "!");
 
         cardView1.setOnClickListener(new View.OnClickListener() {
@@ -70,6 +71,16 @@ public class MainActivity extends AppCompatActivity {
                 auth.signOut();
                 finish();
                 Intent i = new Intent(MainActivity.this, Login.class);
+                startActivity(i);
+            }
+        });
+
+        cardView5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                auth.signOut();
+                finish();
+                Intent i = new Intent(MainActivity.this, Github.class);
                 startActivity(i);
             }
         });

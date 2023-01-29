@@ -17,6 +17,13 @@
         android:theme="@style/AppTheme"
         tools:targetApi="33">
         <activity
+            android:name=".Github"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".Khidir"
             android:exported="false">
             <meta-data
